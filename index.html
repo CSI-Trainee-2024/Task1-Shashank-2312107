@@ -15,9 +15,11 @@
             height: 100vh;
         }
         .container{
-            width: 100vw;
+            width: 98vw;
             height: auto;
+           padding: 1rem;
             background-color: skyblue;
+            
         }
         .top{
             display: flex;
@@ -26,8 +28,8 @@
             gap: 1rem;
         }
         #logo img{
-            width:1.2rem;
-            height: 1.2rem;
+            width:2rem;
+            height: 2rem;
             border: solid balck 1px;
             border-radius: 50%;
             overflow: hidden;
@@ -35,6 +37,109 @@
         a{
             text-decoration: none;
         }
+        .content1{
+           
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 1rem;
+
+           
+        }
+        .phase1{
+            margin: 2rem;
+            padding: 3rem; 
+            display: flex;
+            flex-direction: row; 
+            gap: 2rem;
+
+        }
+        #h1{
+            font-size: 6rem;
+        }
+        #p1{
+            font-size: 1.4rem;
+        }
+        .phase2{
+            margin: 2rem;
+            padding: 3rem; 
+        }
+        .pic-phase2{
+            margin: 2rem;
+            padding: 3rem; 
+           
+           display: grid;
+           grid-template-columns: repeat(5, 1fr); 
+           
+        }
+        .pic-phase2 img{
+           
+            width: 10rem;
+            height:12rem; 
+            border: solid black 1px;
+            border-radius: 1rem;
+        }
+        .pic-phase2 img:hover{
+            transform: scale(1.2);
+            overflow: hidden;
+        }
+        button{
+            padding: 3px;
+            font-size: x-large;
+            background-color: transparent;
+            border: solid black 1px;
+            border-radius: 1.5rem;
+        }
+        button:hover{
+            transform: scale(1.1);
+            background-color: lightgray;
+        }
+        @media(max-width:1150px){
+            .container{
+           background-color: rgb(184, 181, 181);
+           font-size: auto;
+            }
+            .phase1{
+                display: flex;
+                flex-direction: column;
+            }
+            .pic-phase2{
+                display: grid;
+               grid-template-columns: repeat(3,1fr);
+            }
+        }
+        @media (max-width:700px){
+            .pic-phase2{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+            }
+            .container{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        @media (max-width: 517px) {
+        .pic-phase2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
+
+        .content1 {
+        font-size: small; 
+        text-align: center; 
+       }
+
+       #h1 {
+          font-size: 3rem;
+       }
+
+       #p1 {
+        font-size: 1rem; 
+       }
+       }
+
     </style>
 </head>
 <body>
@@ -51,6 +156,48 @@
             </div>
         </header>
         <main>
+            <section>
+                <div class="phase1">
+                    <div class="content1"> <h1 id="h1">Your Ultimate Travel Partner</h1>
+                        <p id="p1">"plan and book your perfect trip with expert advice, travel tips, destination information and information from us "</p>
+                    </div>
+                    <img src="pic1.jpg" alt="content1-pic" id="pic1">
+                </div>
+            </section>
+            <section>
+                <div class="phase2">
+                    <h2>Categories</h2>
+                    <p>Here are a plethora of captivating destinations, meticulously organized into distinct categories.
+                         Each grouping invites exploration and discovery, allowing you to delve into the unique charms and narratives that define these places.
+                          From the ancient echoes of historical landmarks to the breathtaking majesty of natural wonders, 
+                          and from the vibrant pulse of urban landscapes to the serene beauty of cultural enclaves,
+                           each category offers a rich tapestry of experiences. Allow yourself to be drawn into the stories, 
+                        sights, and sensations that await within each realm. If you wish, I can guide you further into these alluring destinations!</p>
+                   
+                
+                <div class="pic-phase2">
+                    <img src="temple.jpg" alt="temple">
+                    <img src="park.jpg" alt="park">
+                    <img src="desert.jpg" alt="desert">
+                    <img src="mountain.jpg" alt="mountain">
+                    <img src="beach.jpg" alt="beach">
+                </div>
+                <h2>Find Proper Destinations : </h2>
+                <br>
+                <button>Jaipur</button>
+                <button>Uttarakhand</button>
+                <button>Goa</button>
+                <button>Gujrat</button>
+                <button>Maharastra</button>
+                <button>Kerala</button>
+                <button>Odisha</button>
+                <button> Himachal Pradesh</button>
+                <button> Karnataka</button>
+                <button> Haryana</button>
+                <button>Punjab</button>
+                <button>Uttar Pradesh</button>
+                </div>
+            </section>
 
         </main>
         <footer>
