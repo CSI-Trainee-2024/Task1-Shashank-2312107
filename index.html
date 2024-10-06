@@ -11,8 +11,8 @@
             box-sizing: border-box;
         }
         body{
-            width: 99vw;
-            height: 100vh;
+            width: 100%;
+            height: auto;
         }
         .container{
             width: 100vw;
@@ -26,6 +26,10 @@
             justify-content: space-around;
             align-items: center;
             gap: 1rem;
+            background-color: gray;
+            border: solid black 0.5px;
+            border-radius: 1rem;
+            box-shadow: 0 0 1rem black;
         }
         #logo img{
             width:2rem;
@@ -57,6 +61,10 @@
             }
         }
         #pic1{
+            width: 25rem;
+            border: solid rgb(28, 7, 120) 1px;
+            border-radius: 1rem;
+            box-shadow: 0 0 1rem rgb(40, 4, 218);
             animation : img-anim 2s linear;
         }
         @keyframes img-anim {
@@ -75,10 +83,11 @@
             display: flex;
             flex-direction: row; 
             gap: 2rem;
-
+            
         }
         #h1{
             font-size: 6rem;
+            text-shadow: 0 0 1rem black;
         }
         #p1{
             font-size: 1.4rem;
@@ -109,6 +118,7 @@
             height:12rem; 
             border: solid black 1px;
             border-radius: 1rem;
+            box-shadow: 0 0 1rem blue;
         }
         .pic-phase2 img:hover{
             transform: scale(1.2);
@@ -125,7 +135,7 @@
             transform: scale(1.1);
             background-color: lightgray;
         }
-        @media(max-width:1150px){
+        @media(max-width:1000px){
             .container{
            background-color: rgb(184, 181, 181);
            font-size: auto;
@@ -134,10 +144,14 @@
                 display: flex;
                 flex-direction: column;
             }
+            #pic1{
+               max-width:15rem;
+            }
             .pic-phase2{
                 display: grid;
                grid-template-columns: repeat(3,1fr);
             }
+            
         }
         @media (max-width:700px){
             .pic-phase2{
@@ -155,6 +169,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        row-gap: 1rem;
+        column-gap: 1rem;
+       }
+       .top{
+        flex-direction: column;
        }
 
         .content1 {
@@ -170,6 +189,190 @@
         font-size: 1rem; 
        }
        }
+       .card-highlight {
+    margin: 2rem;
+    padding: 3rem; 
+    display: flex;
+   
+    gap: 1rem;
+    justify-content: center; 
+}
+
+.card {
+    padding: 1rem;
+    width: 500px; 
+    height: auto;
+    border: solid black 1px;
+    border-radius: 1rem;
+    background-color: rgb(105, 199, 164);
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    box-shadow: 0 0 1rem black;
+    transition: all 0.3s ease;
+}
+
+.card img {
+    height:100px;
+    max-width: 100%;
+}
+
+@media (max-width: 741px) {
+    .card {
+        width: 15rem; 
+        align-items: start;
+        
+    }
+    .card-highlight{
+        flex-direction: column-reverse;
+    }
+    #h2,#h3,h4,#p{
+        font-size: small;
+    }
+  
+}
+
+@media (max-width: 517px) {
+    .card {
+        width: calc(90% - 2rem); 
+    }
+    #h2,#h3,h4,#p{
+        font-size: small;
+    }
+}
+.imgfb img{
+    width: 200px;
+    height: 200px;
+    border: solid black 1px;
+    border-radius: 50%;
+}
+.feedback{
+    border: solid black 2px;
+    padding: 3rem;
+    display: flex;
+    gap: 1rem;
+    font-size: 1.1rem;
+    border-radius: 1rem;
+    background-color: #d5d3af;
+    box-shadow: 0 0 1rem black;
+}
+@media(max-width:666px){
+.feedback{
+    display: flex;
+    flex-direction: column;
+}
+.imgfb img{
+    width: 100px;
+    height: 100px;
+}
+}
+#search{
+    padding: 1rem;
+    width: auto;
+    border: solid brown 1px;
+    border-radius: 1.2rem;
+    padding: 1rem;
+    background-color: transparent;
+}
+.next-page{
+    margin: 0 auto;
+    width: 82%;
+    height: 500px;
+    padding: 2rem;
+   text-align: center;
+   background-image:url(tajmahal.jpg);
+   border: solid blue 2rem;
+   border-radius: 1rem;
+   box-shadow: 0 0 1rem blueviolet;
+   color: azure;
+   text-shadow: 0 0 0.5rem black;
+}
+.phase3{
+    padding-top: 2rem;
+    }
+#comment{
+    padding-top: 10rem;
+}
+.about-place{
+    padding: 1rem;
+    background-color: black;
+    color: white;
+}
+.sign-up{
+    border: solid black 0.2px;
+    border-radius: 1rem;
+    background-color: rgb(215, 215, 195);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 1rem blueviolet;
+}
+#search2{
+   padding:1rem;
+    border: solid brown 1px;
+    border-radius: 1.2rem;
+    background-color:whitesmoke;
+}
+.form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 1rem blue;
+}
+
+#form-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+#name,#destination,#email,#departure,#return{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+@media (max-width:700px){
+    .next-page{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    
+}
+
+
+    
+
 
     </style>
 </head>
@@ -246,12 +449,124 @@
     <option value="Uttarakhand">Uttarakhand</option>
     <option value="West Bengal">West Bengal</option>
 </select>
+<section>
+    <br>
 
-                </div>
-            </section>
+    <div class="card-highlight">
+        <div class="card">
+         <img src="lakshwadeep.jpg" alt="lakshwadeep">
+         <h2id="h2">Agatti Beach</h2>
+         <h3id="h3">lakshwadeep</h3>
+         <pid="p"><h4>1200+</h4> Visitors</p>
+        </div>
+        <div class="card">
+            <img src="mussoorie.jpg" alt="Uttarakhand">
+            <h2id="h2">Mussoorie</h2>
+            <h3id="h3">Uttarakhand</h3>
+            <pid="p"><h4>2500+</h4> Visitors</p>
+        </div>
+        <div class="card">
+            <img src="goa.jpg" alt="goa">
+            <h2id="h2">South Goa Beach</h2>
+            <h3id="h3">Goa</h3>
+            <pid="p"><h4>1800+</h4> Visitors</p>
+        </div>
+        
+        <div class="card">
+            <img src="goa.jpg" alt="goa">
+            <h2id="h2">South Goa Beach</h2>
+            <h3id="h3">Goa</h3>
+            <pid="p"><h4>1800+</h4> Visitors</p>
+        </div>
+        <div class="card">
+            <img src="lakshwadeep.jpg" alt="lakshwadeep">
+            <h2id="h2">Agatti Beach</h2>
+            <h3id="h3">lakshwadeep</h3>
+            <pid="p"><h4>1200+</h4> Visitors</p>
+           </div>
+        <div class="card">
+            <img src="mussoorie.jpg" alt="Uttarakhand">
+            <h2id="h2">Mussoorie</h2>
+            <h3id="h3">Uttarakhand</h3>
+            <pid="p"><h4>2500+</h4> Visitors</p>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="feedback">
+        <div class="imgfb"><img src="ajeet.jpg" alt="ajeetojha-pic"></div>
+        <div class="fbcontent"><h2>Ajeet Ojha</h2>
+            <p>
+            "The room was clean, spacious, and equipped with all the essentials.
+            The bed was incredibly comfortable, ensuring a good night's sleep,
+             and the view from my window was a pleasant surprise. 
+             The bathroom was spotless and stocked with high-quality toiletries,
+              adding a touch of luxury to the stay."<br><br>
+              06 October 2024
+        </p></div>
+    </div>
+</section>
+<section><br>
+    <div class="next-page">
+        <div class="phase3">
+           <label for="search">Search:</label>
+           <input type="search" id="search" placeholder="Search Destination, flights and more">
+        </div>
+        <table id="comment"><th>
+        <p>Agra</p>
+        <h2>Uttar Pradesh</h2>
+        <p>Most popular for </p>
+        <p>family friendly<table><th><ul>Art & Culture</ul><ul>Food</ul>....</th></table> </p>
+
+    </th> </table>
+    </div>
+    <br>
+    <div class="about-place">
+        <h1>About this place</h1>
+        <p>The Taj Mahal is considered to be the greatest architectural achievement in the whole range of Indo-Islamic architecture. Its recognised architectonic beauty has a rhythmic combination of solids and voids, concave and convex and light shadow; such as arches and domes further increases the aesthetic aspect.</p>
+    </div>
+    
+</section>
+<section>
+    <br>
+    <div class="sign-up">
+        <h2>Sign up to our newsletter</h2>
+        <p>Reciev latest news, update, and many other things every week</p>
+        <label for="search2"></label>
+        <input type="search" id="search2" placeholder="Enter your email address">
+    </div>
+</section>
 
         </main>
         <footer>
+            <div class="form-container">
+                <h2 id="form-title">Book Your Travel</h2>
+                <form id="travel-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="destination">Destination</label>
+                        <input type="text" id="destination" name="destination" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="departure">Departure Date</label>
+                        <input type="date" id="departure" name="departure" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="return">Return Date</label>
+                        <input type="date" id="return" name="return" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
 
         </footer>
     </div>
