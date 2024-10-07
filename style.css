@@ -180,17 +180,13 @@ body {
             overflow: hidden;
         }
         
-         button {
+        button {
              padding: 2px; 
            font-size: large;
             background-color: transparent;
             border: solid black 1px;
             border-radius: 1rem;
         } 
-        
-        
-        
-        
         @media(max-width:1000px) {
             .container {
                 padding: 0%;
@@ -198,7 +194,6 @@ body {
                 background-color: rgb(184, 181, 181);
                 font-size: auto;
             }
-        
             .phase1 {
                 padding: 0%;
                 margin: 0%;
@@ -207,26 +202,21 @@ body {
                 justify-content: center;
                 align-items: center;
             }
-        
             #pic1 {
                 max-width: 20rem;
             }
-        
             .pic-phase2 {
                 padding: 0%;
                 margin: 0%;
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
             }
-        
         }
-        
         @media (max-width:700px) {
             .pic-phase2 {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
             }
-        
             .container {
                 padding: 0%;
                 margin: 0%;
@@ -235,7 +225,6 @@ body {
                 text-align: center;
             }
         }
-        
         @media (max-width: 517px) {
             .pic-phase2 {
                 padding: 0%;
