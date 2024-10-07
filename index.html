@@ -7,212 +7,44 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
     <div class="container">
         <header>
             <div class="top">
                 <div id="logo"><img src="logo.jpg" alt="logo"></div>
-                <a href="#phase1">Home</a>
-                <a href="#phase2">About us</a>
-                <a href="#select">Destinations</a>
-                <a href="#">Tour</a>
-                <a href="#feedback">Feedback</a>
-                <button><a href="#sign-up">Log in</a></button>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="toggle-btn">☰</label>
+                <nav class="nav-links">
+                    <a href="#phase1">Home</a>
+                    <a href="about.html">Aboutus</a>
+                    <a href="destination.html">Destinations</a>
+                    <a href="blog.html">Blog</a>
+                    <button><a href="login.html">Log in</a></button>
+                </nav>
             </div>
         </header>
         <main>
             <section>
                 <div class="phase1" id="phase1">
-                    <div class="content1"> <h1 id="h1">Your Ultimate Travel Partner</h1>
-                        <p id="p1">"plan and book your perfect trip with expert advice, travel tips, destination information and information from us "</p>
+                    <div class="content1">
+                        <h1 id="h1">Your Ultimate Travel Partner</h1>
+                        <p id="p1">"Plan and book your perfect trip with expert advice, travel tips, destination information, and more."</p>
                     </div>
                     <img src="pic1.jpg" alt="content1-pic" id="pic1">
                 </div>
             </section>
-            <section>
-                <div class="phase2" id="phase2">
-                    <h2>Categories</h2>
-                    <p>Here are a plethora of captivating destinations, meticulously organized into distinct categories.
-                         Each grouping invites exploration and discovery, allowing you to delve into the unique charms and narratives that define these places.
-                          From the ancient echoes of historical landmarks to the breathtaking majesty of natural wonders, 
-                          and from the vibrant pulse of urban landscapes to the serene beauty of cultural enclaves,
-                           each category offers a rich tapestry of experiences. Allow yourself to be drawn into the stories, 
-                        sights, and sensations that await within each realm. If you wish, I can guide you further into these alluring destinations!</p>
-                   
-                
-                <div class="pic-phase2">
-                    <img src="temple.jpg" alt="temple" aria-placeholder="temple">
-                    <img src="park.jpg" alt="park">
-                    <img src="desert.jpg" alt="desert">
-                    <img src="mountain.jpg" alt="mountain">
-                    <img src="beach.jpg" alt="beach">
-                </div>
-                <h2>Find Proper Destinations:</h2>
-<br>
-<select name="State" id="select">
-    <option value="" disabled selected>Select State</option>
-    <option value="Andhra Pradesh">Andhra Pradesh</option>
-    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-    <option value="Assam">Assam</option>
-    <option value="Bihar">Bihar</option>
-    <option value="Chhattisgarh">Chhattisgarh</option>
-    <option value="Goa">Goa</option>
-    <option value="Gujarat">Gujarat</option>
-    <option value="Haryana">Haryana</option>
-    <option value="Himachal Pradesh">Himachal Pradesh</option>
-    <option value="Jharkhand">Jharkhand</option>
-    <option value="Karnataka">Karnataka</option>
-    <option value="Kerala">Kerala</option>
-    <option value="Madhya Pradesh">Madhya Pradesh</option>
-    <option value="Maharashtra">Maharashtra</option>
-    <option value="Manipur">Manipur</option>
-    <option value="Meghalaya">Meghalaya</option>
-    <option value="Mizoram">Mizoram</option>
-    <option value="Nagaland">Nagaland</option>
-    <option value="Odisha">Odisha</option>
-    <option value="Punjab">Punjab</option>
-    <option value="Rajasthan">Rajasthan</option>
-    <option value="Sikkim">Sikkim</option>
-    <option value="Tamil Nadu">Tamil Nadu</option>
-    <option value="Telangana">Telangana</option>
-    <option value="Tripura">Tripura</option>
-    <option value="Uttar Pradesh">Uttar Pradesh</option>
-    <option value="Uttarakhand">Uttarakhand</option>
-    <option value="West Bengal">West Bengal</option>
-</select>
-<section>
-    <br>
-
-    <div class="card-highlight">
-        <div class="card">
-         <img src="lakshwadeep.jpg" alt="lakshwadeep">
-         <h2id="h2">Agatti Beach</h2>
-         <h3id="h3">lakshwadeep</h3>
-         <pid="p"><h4>1200+</h4> Visitors</p>
-        </div>
-        <div class="card">
-            <img src="mussoorie.jpg" alt="Uttarakhand">
-            <h2id="h2">Mussoorie</h2>
-            <h3id="h3">Uttarakhand</h3>
-            <pid="p"><h4>2500+</h4> Visitors</p>
-        </div>
-        <div class="card">
-            <img src="goa.jpg" alt="goa">
-            <h2id="h2">South Goa Beach</h2>
-            <h3id="h3">Goa</h3>
-            <pid="p"><h4>1800+</h4> Visitors</p>
-        </div>
-        
-        <div class="card">
-            <img src="goa.jpg" alt="goa">
-            <h2id="h2">South Goa Beach</h2>
-            <h3id="h3">Goa</h3>
-            <pid="p"><h4>1800+</h4> Visitors</p>
-        </div>
-        <div class="card">
-            <img src="lakshwadeep.jpg" alt="lakshwadeep">
-            <h2id="h2">Agatti Beach</h2>
-            <h3id="h3">lakshwadeep</h3>
-            <pid="p"><h4>1200+</h4> Visitors</p>
-           </div>
-        <div class="card">
-            <img src="mussoorie.jpg" alt="Uttarakhand">
-            <h2id="h2">Mussoorie</h2>
-            <h3id="h3">Uttarakhand</h3>
-            <pid="p"><h4>2500+</h4> Visitors</p>
-        </div> 
-    </div>
+            
+   
 </section>
-<section>
-    <h1>Feedback : </h1>
-    <div class="feedback" id="feedback">
-        <div class="imgfb"><img src="ajeet.jpg" alt="ajeetojha-pic"></div>
-        <div class="fbcontent"><h2>Ajeet Ojha</h2>
-            <p>
-            "The room was clean, spacious, and equipped with all the essentials.
-            The bed was incredibly comfortable, ensuring a good night's sleep,
-             and the view from my window was a pleasant surprise. 
-             The bathroom was spotless and stocked with high-quality toiletries,
-              adding a touch of luxury to the stay."<br><br>
-              06 October 2024
-        </p></div>
-        
-    </div>
-    <br>
-    <div class="feedback" >
-    <div class="imgfb"><img src="shashank.jpg" alt="shashanksachan-pic"></div>
-        <div class="fbcontent"><h2>Shashank Sachan</h2>
-            <p>
-            "The room was clean, spacious, and equipped with all the essentials.
-            The bed was incredibly comfortable, ensuring a good night's sleep,
-             and the view from my window was a pleasant surprise. 
-             The bathroom was spotless and stocked with high-quality toiletries,
-              adding a touch of luxury to the stay."<br><br>
-              08 October 2024
-        </p></div>
-    </div>
-</section>
-<section><br>
-    <div class="next-page">
-        <div class="phase3">
-           <label for="search">Search:</label>
-           <input type="search" id="search" placeholder="Search Destination, flights and more">
-        </div>
-        <table id="comment">
-        <p>Agra</p>
-        <h2>Uttar Pradesh</h2>
-        <p>Most popular for </p>
-        <p>family friendly</p><p>Art & Culture</p><p>Food</p>
-
-     </table>
-    </div>
-    <br>
-    <div class="about-place">
-        <h1>About this place</h1>
-        <p>The Taj Mahal is considered to be the greatest architectural achievement in the whole range of Indo-Islamic architecture. Its recognised architectonic beauty has a rhythmic combination of solids and voids, concave and convex and light shadow; such as arches and domes further increases the aesthetic aspect.</p>
-    </div>
-    
-</section>
-<section>
-    <br>
-    <div class="sign-up" id="sign-up">
-        <h2>Sign up to our newsletter</h2>
-        <p>Reciev latest news, update, and many other things every week</p>
-        <label for="search2"></label>
-        <input type="search" id="search2" placeholder="Enter your email address">
-    </div>
-</section>
-
-        </main>
-        <footer>
-            <div class="form-container">
-                <h2 id="form-title">Book Your Travel</h2>
-                <form id="travel-form">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" >
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" >
-                    </div>
-                    <div class="form-group">
-                        <label for="destination">Destination</label>
-                        <input type="text" id="destination" name="destination" >
-                    </div>
-                    <div class="form-group">
-                        <label for="departure">Departure Date</label>
-                        <input type="date" id="departure" name="departure" >
-                    </div>
-                    <div class="form-group">
-                        <label for="return">Return Date</label>
-                        <input type="date" id="return" name="return" >
-                    </div>
-                    <div class="form-group">
-                        <button type="submit">Submit</button>
-                    </div>
-                </form>
-            </div>
-            <div class="table">
+ <div class="table">
             <table>
                 <tr>
                     <th>Resources</th>
@@ -255,5 +87,17 @@
 
         </footer>
     </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+</head>
+<body>
+   
 </body>
 </html>
