@@ -11,17 +11,17 @@
         <header>
             <div class="top">
                 <div id="logo"><img src="logo.jpg" alt="logo"></div>
-                <a href="#">Home</a>
-                <a href="#">About us</a>
-                <a href="#">Destinations</a>
+                <a href="#phase1">Home</a>
+                <a href="#phase2">About us</a>
+                <a href="#select">Destinations</a>
                 <a href="#">Tour</a>
-                <a href="#">Blogs</a>
-                <button><a href="#">Log in</a></button>
+                <a href="#feedback">Feedback</a>
+                <button><a href="#sign-up">Log in</a></button>
             </div>
         </header>
         <main>
             <section>
-                <div class="phase1">
+                <div class="phase1" id="phase1">
                     <div class="content1"> <h1 id="h1">Your Ultimate Travel Partner</h1>
                         <p id="p1">"plan and book your perfect trip with expert advice, travel tips, destination information and information from us "</p>
                     </div>
@@ -29,7 +29,7 @@
                 </div>
             </section>
             <section>
-                <div class="phase2">
+                <div class="phase2" id="phase2">
                     <h2>Categories</h2>
                     <p>Here are a plethora of captivating destinations, meticulously organized into distinct categories.
                          Each grouping invites exploration and discovery, allowing you to delve into the unique charms and narratives that define these places.
@@ -123,7 +123,7 @@
     </div>
 </section>
 <section>
-    <div class="feedback">
+    <div class="feedback" id="feedback">
         <div class="imgfb"><img src="ajeet.jpg" alt="ajeetojha-pic"></div>
         <div class="fbcontent"><h2>Ajeet Ojha</h2>
             <p>
@@ -133,6 +133,20 @@
              The bathroom was spotless and stocked with high-quality toiletries,
               adding a touch of luxury to the stay."<br><br>
               06 October 2024
+        </p></div>
+        
+    </div>
+    <br>
+    <div class="feedback" >
+    <div class="imgfb"><img src="shashank.jpg" alt="shashanksachan-pic"></div>
+        <div class="fbcontent"><h2>Shashank Sachan</h2>
+            <p>
+            "The room was clean, spacious, and equipped with all the essentials.
+            The bed was incredibly comfortable, ensuring a good night's sleep,
+             and the view from my window was a pleasant surprise. 
+             The bathroom was spotless and stocked with high-quality toiletries,
+              adding a touch of luxury to the stay."<br><br>
+              08 October 2024
         </p></div>
     </div>
 </section>
@@ -159,7 +173,7 @@
 </section>
 <section>
     <br>
-    <div class="sign-up">
+    <div class="sign-up" id="sign-up">
         <h2>Sign up to our newsletter</h2>
         <p>Reciev latest news, update, and many other things every week</p>
         <label for="search2"></label>
@@ -174,29 +188,31 @@
                 <form id="travel-form">
                     <div class="form-group">
                         <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" name="name" >
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" >
                     </div>
                     <div class="form-group">
                         <label for="destination">Destination</label>
-                        <input type="text" id="destination" name="destination" required>
+                        <input type="text" id="destination" name="destination" >
                     </div>
                     <div class="form-group">
                         <label for="departure">Departure Date</label>
-                        <input type="date" id="departure" name="departure" required>
+                        <input type="date" id="departure" name="departure" >
                     </div>
                     <div class="form-group">
                         <label for="return">Return Date</label>
-                        <input type="date" id="return" name="return" required>
+                        <input type="date" id="return" name="return" >
                     </div>
                     <div class="form-group">
                         <button type="submit">Submit</button>
                     </div>
                 </form>
             </div>
+            <div class="lower"> <h2>&#169 Travel site</h2></div>
+           
 
         </footer>
     </div>
