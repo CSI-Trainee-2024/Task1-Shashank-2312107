@@ -5,14 +5,17 @@
 }
 
 body {
-    width: 100%;
-    height: auto;
+
+padding: 5px;
+    width: 100vw;
+    height: 100vh;
 }
 
 .container {
     width: 100vw;
     height: auto;
-    padding: 1rem;
+    margin: 5px;
+    border: solid skyblue 5px;
     background-color: skyblue;
 }
 
@@ -28,20 +31,29 @@ body {
     margin: auto;
     padding: 20px;
 }
-
+.container1 section h1{
+    padding-left: 8px;
+}
 h1, h2 {
     color: #2c3e50;
+}
+.phase2 {
+    padding:10px
 }
 
 section {
     margin-bottom: 20px;
     background: #fff;
-    padding: 20px;
+    margin: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+.phase2{
+    margin: 10px;
+}
 
 .pic-phase2 {
+    padding: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -81,19 +93,27 @@ section {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #848181;
     border-radius: 5px;
 }
 
-#comment {
+.comment {
     margin-top: 20px;
 }
+ .comment {
+    width: 307px;
+    border: solid black 1px;
+    border-radius: 1px;
+    background-color: black;
+    color: white;
+}
+
 
 .about-place {
     margin-top: 20px;
 }
 .pic-phase2 img:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);
     overflow: hidden;
 }
 .next-page {
@@ -186,6 +206,7 @@ section {
     border-top: 1px solid #ccc;
     padding: 1rem 0;
     gap: 1rem;
+    z-index: 1;
 }
 
 
@@ -291,8 +312,8 @@ section {
                 font-size: auto;
             }
             .phase1 {
-                padding: 0%;
-                margin: 0%;
+                padding: 2rem;
+                margin: 1rem;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -310,11 +331,15 @@ section {
                 flex-direction: column;
                 text-align: center;
             }
+            .container section{
+                margin: 10px;
+                padding: 5px;
+            }
         }
         @media (max-width: 517px) {
             .top {
                 padding: 0%;
-                margin: 0%;
+                margin: 2%;
                 flex-direction: row;
             }
             .content1 {
@@ -543,7 +568,6 @@ section {
             margin: 0.5rem 0;
         }
         
-        
         th, td {
             border: 1px solid #ddd;
         }
@@ -551,11 +575,11 @@ section {
         tr:hover {
             background-color: #f1f1f1;
         }
-        
-        
-        
         h1 {
             margin-bottom: 2rem;
             font-size: 2.5rem;
         }
-  
+  a button{
+    margin: 0 40%;
+    width: 300px;
+  }
