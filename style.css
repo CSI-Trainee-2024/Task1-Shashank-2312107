@@ -529,7 +529,6 @@ section {
                 margin: 0%;
                 padding: 0%;
             }
-        
         }
         
         .lower {
@@ -567,7 +566,7 @@ section {
         
             margin: 0.5rem 0;
         }
-        
+
         th, td {
             border: 1px solid #ddd;
         }
@@ -579,7 +578,4 @@ section {
             margin-bottom: 2rem;
             font-size: 2.5rem;
         }
-  a button{
-    margin: 0 40%;
-    width: 300px;
-  }
+ 
